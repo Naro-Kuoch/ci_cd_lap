@@ -9,7 +9,7 @@ import io
 def test_username(monkeypatch):
     username = "myusernae"
     email = "myuser@example.com"
-    password = "P@ssw0rd"
+    password = "Pssw0rd"
     monkeypatch.setattr('sys.stdin', io.StringIO(username+"\n"+email+"\n"+password+"\n"))
     username, email, password = get_user_input()
     assert validate_username(username) == True
